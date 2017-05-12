@@ -1,5 +1,6 @@
 FROM python:2.7
 
-EXPOSE 80
 
-ENTRYPOINT ["python", "printer.py"]
+WORKDIR /home/root/hw
+COPY python ./python
+ENTRYPOINT ["python", "python/hw.py"]
